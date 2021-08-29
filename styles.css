@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+header {
+  background: hsl(224, 36%, 15%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+header h1 {
+  color: black;
+  font-size: 4rem;
+}
+
+.landing {
+  position: absolute;
+}
+
+.landing nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 10px auto;
+  min-height: 10vh;
+}
+
+.landing nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.landing h1,
+.landing nav ul,
+.about-text,
+.about-image {
+  flex: 1;
+}
+
+/* About Section Start */
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.about-text h1 {
+  color: hsl(0, 94%, 66%);
+  padding: 10px 0;
+}
+
+.about-text p {
+  line-height: 1.8rem;
+}
+
+.about-text a {
+  margin: 15px 0;
+  text-decoration: none;
+  display: inline-block;
+  background: hsl(0, 94%, 66%);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+}
+
+.about-text a:hover {
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.about-image {
+}
+
+.about-image img {
+  width: 100%;
+}
+
+span {
+  opacity: 0;
+  transition: all 1s ease-out;
+  display: inline-block;
+  transform: translateY(50px);
+}
+
+span.fancy {
+  color: white;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media (max-width:780px){
+  #about {
+    flex-direction: column;
+  }
+  .about-text {
+    order: 1;
+  }
+  .about-text p {
+    line-height: 2rem;
+  }
+}
+/* About Section END */
