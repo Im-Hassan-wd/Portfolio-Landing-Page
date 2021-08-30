@@ -65,15 +65,15 @@ header h1 {
 
 /* About Section Start */
 #about {
-  min-height: 100vh;
-
 }
+
 .about-desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   margin: 20px auto;
+  padding: 30px 0;
 }
 
 .about-text h1 {
@@ -137,15 +137,20 @@ span.fancy {
 /* Message Section Start */
 .message {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 90%;
   margin: 20px auto;
-  height: 100vh;
+  padding: 30px 0;
 }
 
-.message-image,.message-form {
+/* .message-image,.message-form {
   flex: 1;
+} */
+
+.message-form h2 {
+  padding: 10px 0;
+  color: #FFB6B6;
 }
 
 .message-form input,
@@ -155,7 +160,7 @@ span.fancy {
   border: 1px solid #FFB6B6;
   margin: 10px 0;
   resize: none;
-  outline-color: #FFB6B6
+  outline-color: #FFB6B6;
 }
 
 .message-form label{
