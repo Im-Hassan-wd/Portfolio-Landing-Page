@@ -31,6 +31,7 @@ header h1 {
   font-size: 4rem;
 }
 
+
 .landing {
   position: absolute;
 }
@@ -40,7 +41,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  margin: 10px auto;
+  margin: 20px auto;
   min-height: 10vh;
 }
 
@@ -65,6 +66,9 @@ header h1 {
 /* About Section Start */
 #about {
   height: 100vh;
+
+}
+.about-desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +122,7 @@ span.fancy {
 }
 
 @media (max-width:780px){
-  #about {
+  .about-desc {
     flex-direction: column;
   }
   .about-text {
@@ -129,3 +133,48 @@ span.fancy {
   }
 }
 /* About Section END */
+
+/* Message Section Start */
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+  height: 100vh;
+}
+
+.message-image,.message-form {
+  flex: 1;
+}
+
+.message-form input,
+.message-form  textarea{
+  width: 70%;
+  padding: 7px;
+  border: 1px solid #FFB6B6;
+  margin: 10px 0;
+  resize: none;
+  outline-color: #FFB6B6
+}
+
+.message-form label{
+  display: block;
+  font-size: 1.5rem;
+  color: #0E0B37;
+}
+
+.message-form button {
+  font-size: 1.3rem;
+  padding: 5px 20px;
+  background: #FFB6B6;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: none;
+}
+
+/* message animation */
+.message-image svg {
+  width: 100%;
+}
