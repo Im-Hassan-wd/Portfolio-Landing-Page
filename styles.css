@@ -72,11 +72,10 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 20px auto;
-  padding: 30px 0;
+  margin: 50px auto;
 }
 
-.about-text h1 {
+.about-text h2 {
   color: hsl(0, 94%, 66%);
   padding: 10px 0;
 }
@@ -104,7 +103,7 @@ header h1 {
 .about-image {
 }
 
-.about-image img {
+.about-image svg {
   width: 100%;
 }
 
@@ -135,13 +134,20 @@ span.fancy {
 /* About Section END */
 
 /* Message Section Start */
+#message {
+  padding: 30px 10px;
+}
+
+#message h1 {
+  border-bottom: 1px solid #3F3D56;
+  color: #0E0B37
+}
 .message {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 90%;
   margin: 20px auto;
-  padding: 30px 0;
 }
 
 /* .message-image,.message-form {
@@ -161,6 +167,7 @@ span.fancy {
   margin: 10px 0;
   resize: none;
   outline-color: #FFB6B6;
+  color: #0E0B37;
 }
 
 .message-form label{
@@ -177,6 +184,7 @@ span.fancy {
   border-radius: 5px;
   margin: 5px 0;
   border: none;
+  color: #0E0B37
 }
 
 /* message animation */
@@ -222,4 +230,24 @@ span.fancy {
   .message-form {
     order: 1;
   }
+  svg {
+    height: 380px;
+  }
+}
+
+/* work experience */
+.experience {
+
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.experience-image,.experience-text {
+  flex: 1;
 }
