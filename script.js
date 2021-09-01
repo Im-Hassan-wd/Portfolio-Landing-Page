@@ -24,3 +24,15 @@ function complete(){
   clearInterval(timer);
   timer = null;
 }
+
+// nav transition background
+const nav = document.querySelector('.landing nav');
+
+const transHeader = () => {
+  if (this.scrollY > this.innerHeight / 1.2){
+      document.body.classList.add('bg-active');
+    }else {
+      document.body.classList.remove('bg-active');
+    }
+}
+}
