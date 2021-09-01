@@ -43,7 +43,22 @@ header h1 {
   width: 95%;
   margin: 20px auto;
   min-height: 10vh;
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 2;
 }
+
+.nav-bg {
+  background: #0E0B37;
+  transition: all 0.5s ease-out;
+  color: white;
+}
+
+.nav-a {
+  color: white;
+}
+
 
 .landing nav ul {
   list-style: none;
@@ -56,7 +71,7 @@ header h1 {
   color: black;
 }
 
-.landing h2,
+.landing h3,
 .landing nav ul,
 .about-text,
 .about-image {
